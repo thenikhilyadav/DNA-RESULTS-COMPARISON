@@ -1,0 +1,1 @@
+SELECT a.C1, (a.C2=b.C2) AS C2_match, (a.C3=b.C3) AS C3_match, (a.C4=b.C4) AS C4_match, ((a.C2=b.C2 AND a.C3=b.C3 AND a.C4=b.C4)) AS fully_identical FROM Ancestrychip a JOIN excelchipGSA b ON a.C1=b.C1;
